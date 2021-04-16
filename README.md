@@ -55,3 +55,12 @@ streamlit run application.py
   #on Linux
   source env/bin/activate
   ```
+
+### Heroku
+
+```
+heroku login
+heroku create knownowanalysis
+git push heroku master
+
+```
