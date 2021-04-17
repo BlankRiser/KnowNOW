@@ -21,8 +21,11 @@ st.set_page_config(layout="wide")
 st.title("Analyze stocks, ETFs, and Cryptocurrencies ")
 st.text("Made with 💗 by Ram Shankar Choudhary")
 
-load_dotenv()
-ALPHAVANTAGE_KEY = os.getenv('ALPHAVANTAGE_API_KEY')
+# load_dotenv()
+# ALPHAVANTAGE_KEY = os.getenv('ALPHAVANTAGE_API_KEY')
+
+# for Heroku
+ALPHAVANTAGE_KEY = os.environ['ALPHAVANTAGE_API_KEY']
 
 
 digital_list = pd.read_csv("digital_currency_list.csv")
